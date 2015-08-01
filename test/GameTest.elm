@@ -6,4 +6,8 @@ import ElmTest.Test exposing (test, suite)
 
 tests =
   suite "Game"
-    []
+    [ test "gutter game scores 0"
+        (List.repeat 20 0
+          |> score
+          |> assertEqual 0)
+    ]

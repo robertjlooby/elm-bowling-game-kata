@@ -1,3 +1,4 @@
 module Game where
 
-placeholder = True
+score rolls =
+  0
