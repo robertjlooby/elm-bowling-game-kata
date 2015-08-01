@@ -21,4 +21,10 @@ tests =
           |> List.append [5, 5, 3]
           |> score
           |> assertEqual 16)
+
+    , test "scores one strike"
+        (List.repeat 17 0
+          |> List.append [10, 4, 3]
+          |> score
+          |> assertEqual 24)
     ]
