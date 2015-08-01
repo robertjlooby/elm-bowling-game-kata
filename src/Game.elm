@@ -1,4 +1,6 @@
 module Game where
 
+import List exposing (sum)
+
 score rolls =
-  0
+  sum rolls

@@ -10,4 +10,9 @@ tests =
         (List.repeat 20 0
           |> score
           |> assertEqual 0)
+
+    , test "all ones scores 20"
+        (List.repeat 20 1
+          |> score
+          |> assertEqual 20)
     ]
