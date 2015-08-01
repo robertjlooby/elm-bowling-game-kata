@@ -27,4 +27,9 @@ tests =
           |> List.append [10, 4, 3]
           |> score
           |> assertEqual 24)
+
+    , test "scores a perfect game"
+        (List.repeat 12 10
+          |> score
+          |> assertEqual 300)
     ]
