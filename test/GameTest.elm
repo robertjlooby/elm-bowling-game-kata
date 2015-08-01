@@ -15,4 +15,10 @@ tests =
         (List.repeat 20 1
           |> score
           |> assertEqual 20)
+
+    , test "scores one spare"
+        (List.repeat 17 0
+          |> List.append [5, 5, 3]
+          |> score
+          |> assertEqual 16)
     ]
