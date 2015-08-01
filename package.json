@@ -1,0 +1,16 @@
+{
+  "name": "elm-bowling-game-kata",
+  "version": "0.0.1",
+  "description": "The bowling game kata in Elm",
+  "author": "Robert Looby <robertjlooby@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertjlooby/elm-bowling-game-kata"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "elm-test": "^0.2.0"
+  },
+  "license": "MIT"
+}
