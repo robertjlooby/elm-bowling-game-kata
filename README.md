@@ -8,6 +8,6 @@ The [bowling game kata](http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameK
 
 OR
 
-`npm install watch -g`
+`bundle install`
 
-`watch 'elm-test test/AllTests.elm' .`
+`guard`
