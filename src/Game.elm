@@ -5,15 +5,17 @@ import List exposing (sum, take)
 score rolls =
   case rolls of
     10::rest ->
-      let bonus = take 2 rest |> sum
-      in
-          10 + bonus + score rest
+      10 + strikeBonus rest + score rest
     first::second::rest ->
       if | first + second == 10 ->
-             let bonus = take 1 rest |> sum
-             in
-                 10 + bonus + score rest
+             10 + spareBonus rest + score rest
          | otherwise ->
              first + second + score rest
     [] -> 0
     [_] -> 0
+
+bonus numRolls rolls =
+  take numRolls rolls |> sum
+
+spareBonus = bonus 1
+strikeBonus = bonus 2
