@@ -4,8 +4,8 @@ import List exposing (sum, take)
 
 score rolls =
   case rolls of
-    [first, second, third] ->
-      first + second + third
+    [_, _, _] as lastFrame ->
+      sum lastFrame
     10::rest ->
       10 + strikeBonus rest + score rest
     first::second::rest ->
