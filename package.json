@@ -10,7 +10,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "elm-test": "^0.2.0"
+    "elm-test": "^0.4.0"
   },
   "license": "MIT"
 }
